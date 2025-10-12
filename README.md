@@ -19,9 +19,9 @@ NWSplit80 is a split, columnar staggered, ergonomic keyboard designed for ISO la
 - VIAL:  `#INSERT LINK`
 
 ## TODO:
-
+- [ ] Images
 - [ ] QMK PR
 - [ ] VIAL PR
-- [ ] Images
+- [ ] File Structure
 - [ ] Build Guide
 - [ ] Detailed BOM
