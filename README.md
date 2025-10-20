@@ -3,7 +3,7 @@ NWSplit80 is a split, columnar staggered, ergonomic keyboard designed for ISO la
 
 ------------------------------------------------
 
-`#INSERT IMAGE`
+![NWSplit60](https://i.imgur.com/rzCsKMJ.jpeg)
 
 ------------------------------------------------
 
