@@ -26,9 +26,12 @@ points:
         rotate: 0
       columns:
         reachy.key.mirror.skip: false
+        #reachy.rows.bottom.mirror.skip: true
         reachy.key.skip: true
         reachy.key.column_net: "GP9"
         
+        #outer.rows.num.mirror.skip: false
+        #outer.rows.num.skip: true
         outer.key.column_net: "GP8"
         
         pinky.key.column_net: "GP7"
@@ -314,6 +317,41 @@ outlines:
     where:
       ref: matrix_middle_home
 
+  outline_feet: 
+  - what: outline
+    name: outline
+    expand: tolerance
+  - what: rectangle
+    size: [15, 54]
+    where: /.atrix_stretch_bottom/
+    operation: subtract
+    adjust:
+      shift: [6, -28]
+  - what: rectangle
+    size: [15, 54]
+    where: /.atrix_stretch_bottom/
+    operation: subtract
+    adjust:
+      shift: [6, 38]
+
+  _outline_right_buffer_feet: 
+  - what: outline
+    name: outline_feet
+  - what: rectangle
+    size: 10U
+    operation: subtract
+    where:
+      ref: matrix_middle_home
+
+  _outline_left_buffer_feet: 
+  - what: outline
+    name: outline_feet
+  - what: rectangle
+    size: 10U
+    operation: subtract
+    where:
+      ref: mirror_matrix_middle_home
+
   _outline_left_XL:
   - what: outline
     name: _outline_left_buffer
@@ -467,6 +505,9 @@ outlines:
 
 cases:
   left_base:
+    - name: _outline_left_buffer_feet
+      extrude: baseHeight
+      shift: [0,0, -baseHeight]
     - name: _outline_left_buffer
       extrude: baseHeight  
     - name: _standoffs_left_base
@@ -476,6 +517,7 @@ cases:
     - name: _holes_holding_shell
       operation: subtract
       extrude: 5 # Make holes go through base
+      shift: [0,0, -baseHeight]
     - name: _standoffs_left_shell
       extrude: 0.6 # Indents on bottom of base for screws
       operation: subtract
@@ -491,6 +533,9 @@ cases:
       shift: [0,0, shellThickness-wallHeight]
 
   right_base:
+    - name: _outline_right_buffer_feet
+      extrude: baseHeight
+      shift: [0,0, -baseHeight]
     - name: _outline_right_buffer
       extrude: baseHeight
     - name: _standoffs_right_base
@@ -500,6 +545,7 @@ cases:
     - name: _holes_holding_shell
       operation: subtract
       extrude: 5 # Make holes go through base
+      shift: [0,0, -baseHeight]
     - name: _standoffs_right_shell
       extrude: 0.6
       operation: subtract
