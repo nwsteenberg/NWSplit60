@@ -9,7 +9,7 @@ NWSplit80 is a split, columnar staggered, ergonomic keyboard designed for ISO la
 
 ## Features: 
 * Column Staggered
-* Asymetric layout to support ISO layout
+* Asymetric to support ISO layout
 * Thumb cluster and inner stretch keys on both sides
 * RP2040-zero controller
 * Hotswap MX switches
