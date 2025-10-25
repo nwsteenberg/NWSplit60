@@ -322,13 +322,13 @@ outlines:
     name: outline
     expand: tolerance
   - what: rectangle
-    size: [15, 54]
+    size: [14, 58]
     where: /.atrix_stretch_bottom/
     operation: subtract
     adjust:
       shift: [6, -28]
   - what: rectangle
-    size: [15, 54]
+    size: [14, 58]
     where: /.atrix_stretch_bottom/
     operation: subtract
     adjust:
@@ -594,7 +594,7 @@ pcbs:
           side: "F"
         where: matrix_middle_home
         adjust:
-          shift: [71.5, 14]
+          shift: [72.5, 14]
           rotate: 270
       mcu:
         what: waveshare-rp2040 #https://github.com/CountParadox/RP2040-Zero-Kicad/tree/main
@@ -714,7 +714,7 @@ pcbs:
           side: "F"
         where: mirror_matrix_middle_home
         adjust:
-          shift: [71.5, 14]
+          shift: [72.5, 14]
           rotate: 270
       mcu:
         what: waveshare-rp2040 #https://github.com/CountParadox/RP2040-Zero-Kicad/tree/main
