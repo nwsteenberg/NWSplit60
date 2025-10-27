@@ -1,5 +1,5 @@
 # NWSplit60 Keyboard
-NWSplit80 is a split, columnar staggered, ergonomic keyboard designed for ISO layout. 
+NWSplit80 is a split, column staggered, ergonomic keyboard designed for ISO layout. 
 
 ------------------------------------------------
 
